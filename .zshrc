@@ -102,4 +102,11 @@ alias mysqlstop='sudo /usr/local/mysql/support-files/mysql.server stop'
 alias mysqlrestart='sudo /usr/local/mysql/support-files/mysql.server restart'
 alias mysqlrootlogin='mysql -u root -p'
 
-
+# alias git log 
+alias lg=git lg1
+alias lg1=git lg1-specific --all
+alias lg2=git lg2-specific --all
+alias lg3=git lg3-specific --all
+alias lg1-specific=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+alias lg2-specific=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+alias lg3-specific=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
